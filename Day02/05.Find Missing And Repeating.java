@@ -1,7 +1,9 @@
 class Solve {
     int[] findTwoElement(int arr[], int n) {
         
-        
+        //Jai Baba Bhole
+        //O(n)
+        //O(1)
         int[] hash=new int[n+1];
         for(int num:arr){
             hash[num]++;    
