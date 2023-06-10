@@ -5,7 +5,7 @@ class Solution
     //Function to count inversions in the array.
     
     static long merge(long arr[], int l, int m, int r) {
-         long cnt = 0;
+        long cnt = 0;
         int i = l, j = m + 1, ci = 0;
         long temp[] = new long[r - l + 1];
         
@@ -43,6 +43,8 @@ class Solution
         }
         return cnt;
     }
+
+    //Main Function
     static long inversionCount(long arr[], long n)
     {
         int l = 0, r = (int) (n - 1);

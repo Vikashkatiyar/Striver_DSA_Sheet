@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 class Solution {
     //Jai Baba Bhole
-    //O(n)
+    //O(nlogn)
     public int[][] merge(int[][] intervals) {
         //Sort the Array on the basis of first element
         Arrays.sort(intervals,(a,b)->Integer.compare(a[0],b[0]));

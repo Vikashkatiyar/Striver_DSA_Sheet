@@ -44,6 +44,7 @@ class Solution {
         //row:- mat[..][j]
         //col:- mat[i][..]
         
+        //Step1
         int col=1;
         for(int i=0;i<n;i++){
             for(int j=0;j<m;j++){
@@ -60,7 +61,7 @@ class Solution {
             }
         }
         
-        
+        //step2
         for(int i=1;i<n;i++){
             for(int j=1;j<m;j++){
                 if(mat[i][j]!=0){
@@ -71,12 +72,14 @@ class Solution {
             }
         }
         
+        //step3
         if(mat[0][0]==0){
             for(int j=0;j<m;j++){
                 mat[0][j]=0;
             }
         }
         
+        //step4
         if(col==0){
             for(int i=0;i<n;i++){
                 mat[i][0]=0;

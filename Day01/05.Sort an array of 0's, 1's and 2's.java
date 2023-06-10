@@ -1,7 +1,8 @@
+//Duck National Flag Algorithums
 class Solution {
     //Jai Baba Bhole
-    //Duck National Flag Algorithums
     //O(n);
+    //O(1)
     public void swap(int []nums,int i,int j){
         int temp=nums[i];
         nums[i]=nums[j];
@@ -13,6 +14,7 @@ class Solution {
         int i=0;
         int j=0;
         int k=n-1;
+
         while(j<=k){
             if(nums[j]==0){
                 swap(nums,i,j);

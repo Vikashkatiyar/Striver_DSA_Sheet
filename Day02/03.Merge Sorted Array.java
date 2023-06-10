@@ -1,7 +1,7 @@
 //Approach 01:-Brute forse using Extra Space
-//O(n+m)
-//O(n+m)
 class Solution {
+    //O(n+m)
+    //O(n+m)
     public void merge(int[] a, int m, int[] b, int n) {
        int []c=new int[m+n];
         int i=0,j=0,k=0;
@@ -82,10 +82,12 @@ class Solution {
                 start++;
                 end++;
             }
+            
             if(gap==1){
                  break;
              }
-        
+             
+             //Ceil of Gap Value 
              if(gap % 2 == 1) {
                 gap = gap/2 + 1;
              }

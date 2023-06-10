@@ -3,6 +3,7 @@ package Day01;
 class Solution {
     //Jai Baba Bhole
     //O(n)
+    //O(1)
     public int maxSubArray(int[] nums) {
         int maxSum=Integer.MIN_VALUE;
         int currSum=0;
