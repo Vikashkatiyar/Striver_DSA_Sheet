@@ -4,7 +4,7 @@ class Solution {
     //O(2n)
     //O(n)
     public int lengthOfLongestSubstring(String S) {
-         Set<Character> set=new HashSet<>();
+        Set<Character> set=new HashSet<>();
         int i=0,j=0,len=0;
         while(j<S.length()){
             if(set.add(S.charAt(j))){

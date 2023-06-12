@@ -1,0 +1,65 @@
+/*Node class  used in the program
+class Node
+{
+	int data;
+	Node next;
+	Node bottom;
+	
+	Node(int d)
+	{
+		data = d;
+		next = null;
+		bottom = null;
+	}
+}
+*/
+/*  Function which returns the  root of 
+    the flattened linked list. */
+    
+class GfG
+{
+    //Jai Baba Bhole
+    //O(total no of nodes)
+    //O(1)
+    Node mergeList(Node headA,Node headB){
+        Node temp=new Node(0);
+        Node res=temp;
+        
+        Node list1=headA;
+        Node list2=headB;
+        while(list1!=null && list2!=null){
+               if(list1.data<list2.data){
+                temp.bottom=list1;
+                temp=temp.bottom;
+                list1=list1.bottom;
+            }else{
+                temp.bottom=list2;
+                temp=temp.bottom;
+                list2=list2.bottom;
+            } 
+        }
+        
+        if(list1!=null){
+            temp.bottom=list1;
+        }else{
+            temp.bottom=list2;
+        }
+        
+        return res.bottom;
+            
+        
+        
+        
+    }
+    Node flatten(Node root)
+    {
+	    if(root==null || root.next==null){
+	        return root;
+	    }
+	    
+	    root.next=flatten(root.next);
+	    root=mergeList(root,root.next);
+	    
+	    return root;
+    }
+}
