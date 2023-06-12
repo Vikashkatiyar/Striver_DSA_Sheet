@@ -12,10 +12,13 @@ class Solution {
             if(currProfit>profit){
                 profit=currProfit;
             }
+             //profit=Math.max(currProfit,profit);
             
             if(cost[i]<minDayCost){
                 minDayCost=cost[i];
             }
+
+            // minDayCost=Math.min(minDayCost,cost[i]);
         }
         return profit;
     }
